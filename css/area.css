@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .header{
+    margin: 4rem auto 7rem;
+    text-align: center;
+  }
+  .header h2{
+    font-size: 3rem;
+    line-height: 2.9rem;
+    color: #7c3aed;
+  }
+
+  .header p{
+    font-size: 1.4rem;
+    margin-top: 10px;
+    
+  }
