@@ -1,9 +1,9 @@
-const firstSide = document.querySelector("#first-side");
-const secondSide = document.querySelector("#second-side");
-const thirdSide = document.querySelector("#third-side");
+const firstSide = document.querySelector(".first-side");
+const secondSide = document.querySelector(".second-side");
+const thirdSide = document.querySelector(".third-side");
 const calculate = document.querySelector("#calculate-area");
-const output = document.querySelector("#output");
-
+const msg = document.querySelector("#msg");
+console.log("hi");
 function calculateArea(e) {
   e.preventDefault();
 
@@ -25,10 +25,10 @@ function calculateArea(e) {
         (semiPerimeter - secondSideValue) *
         (semiPerimeter - thirdSideValue)
     ).toFixed(4);
-    output.innerText = `Area of a triangle using heron's formula is ${result} units`;
+    msg.innerText = `Area of a triangle using heron's formula is ${result} units`;
   } else {
-    output.innerText = "Enter valid side lengths such that each side lengths";
+    msg.innerText = "Enter valid side lengths such that each side lengths";
   }
 }
 
-calculate.addEventListener("submit", calculateArea);
+calculate.addEventListener("click", calculateArea);
