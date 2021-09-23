@@ -4,8 +4,10 @@ const thirdSide = document.querySelector(".third-side");
 const calculate = document.querySelector("#calculate-area");
 const msg = document.querySelector("#msg");
 console.log("hi");
-function calculateArea(e) {
-  e.preventDefault();
+function calculateArea() {
+  
+  
+  // e.preventDefault();
 
   const firstSideValue = Number(firstSide.value);
   const secondSideValue = Number(secondSide.value);
@@ -27,7 +29,7 @@ function calculateArea(e) {
     ).toFixed(4);
     msg.innerText = `Area of a triangle using heron's formula is ${result} units`;
   } else {
-    msg.innerText = "Enter valid side lengths such that each side lengths";
+    msg.innerText = "Enter valid side lengths";
   }
 }
 
